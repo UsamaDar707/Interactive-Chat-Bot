@@ -16,7 +16,8 @@ def generate_response(input_text):
 
 # Streamlit app
 def main():
-    st.title("Gemini Generative AI Chat")
+    st.title("ARONA Chat-BOT")
+    st.write("Powered  by: PGC Sialkot")
 
     # Store the user input in Streamlit session state
     if "user_input" not in st.session_state:
@@ -34,7 +35,7 @@ def main():
 
     # Display the generated response if available
     if "response" in st.session_state:
-        st.write("Gemini AI Response:")
+        st.write("ARONA  Response:")
         st.write(st.session_state.response)
 
 if __name__ == "__main__":
